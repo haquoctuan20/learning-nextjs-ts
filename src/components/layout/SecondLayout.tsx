@@ -1,4 +1,4 @@
-import { LayoutProps } from '@/src/models';
+import { LayoutProps } from '@src/models';
 import Link from 'next/link';
 import React from 'react';
 
