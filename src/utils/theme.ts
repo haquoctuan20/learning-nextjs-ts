@@ -1,0 +1,39 @@
+import { createTheme } from '@mui/material/styles';
+import { red } from '@mui/material/colors';
+
+// Create a theme instance.
+const theme = createTheme({
+  palette: {
+    primary: {
+      main: '#556cd6',
+    },
+    secondary: {
+      main: '#19857b',
+    },
+    error: {
+      main: red.A400,
+    },
+  },
+
+  components: {
+    MuiLink: {
+      defaultProps: {
+        underline: 'none',
+      },
+
+      styleOverrides: {
+        root: {
+          color: 'black',
+          fontWeight: '500',
+
+          '&:hover, &.active': {
+            color: '#556cd6',
+            transition: 'all 0.3s',
+          },
+        },
+      },
+    },
+  },
+});
+
+export default theme;
