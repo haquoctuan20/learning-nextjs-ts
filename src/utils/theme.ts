@@ -3,6 +3,11 @@ import { red } from '@mui/material/colors';
 
 // Create a theme instance.
 const theme = createTheme({
+  typography: {
+    fontFamily: 'Nunito, sans-serif',
+    fontSize: 18,
+  },
+
   palette: {
     primary: {
       main: '#556cd6',
