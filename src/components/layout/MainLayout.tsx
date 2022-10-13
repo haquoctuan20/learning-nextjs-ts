@@ -1,5 +1,5 @@
-import { LayoutProps } from '@/src/models';
 import { Box, Container, Stack } from '@mui/material';
+import { LayoutProps } from '@src/models';
 import Header from '../header';
 import Footer from './Footer';
 
