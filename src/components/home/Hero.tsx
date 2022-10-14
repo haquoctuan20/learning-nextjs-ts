@@ -6,15 +6,20 @@ import imgTemp from '@src/assets/img/image.jpg';
 
 const Hero = () => {
   return (
-    <Box component='section'>
+    <Box component='section' pt={{ xs: 2, md: 8 }}>
       <Container fixed>
-        <Stack direction='row' justifyContent='space-between' alignItems='center'>
-          <Box>
-            <Typography>
-              Lorem ipsum dolor sit, amet <br /> consectetur adipisicing elit. Illo, consequatur.
+        <Stack
+          direction={{ xs: 'column-reverse', md: 'row' }}
+          justifyContent='space-between'
+          alignItems='center'
+          spacing={4}
+        >
+          <Box textAlign={{ xs: 'center', md: 'left' }}>
+            <Typography component='h1' variant='h4' fontWeight='bold' mb={5}>
+              Lorem ipsum dolor <br /> consectetur adipisicing elit
             </Typography>
 
-            <Typography>
+            <Typography mb={5}>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium excepturi minima
               cumque commodi! Id laborum vel placeat rem eveniet possimus corporis quasi pariatur
               nostrum officia. Veritatis voluptates accusantium perferendis doloribus tempora,
@@ -25,7 +30,7 @@ const Hero = () => {
           </Box>
 
           <Box>
-            <Image src={imgTemp} width='600px' height='600px' alt='this is image'></Image>
+            <Image src={imgTemp} width='1000px' height='800px' alt='this is image'></Image>
           </Box>
         </Stack>
       </Container>
