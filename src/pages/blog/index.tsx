@@ -1,4 +1,4 @@
-import { MainLayout } from '@src/components/layout';
+import { MainLayout } from '@/components/layout';
 import React, { ReactElement } from 'react';
 
 const BlogPage = () => {

@@ -14,9 +14,13 @@ let theme = createTheme({
     },
     secondary: {
       main: '#19857b',
+      light: '#e2f7f4',
     },
     error: {
       main: red.A400,
+    },
+    text: {
+      primary: '#21243d',
     },
   },
 

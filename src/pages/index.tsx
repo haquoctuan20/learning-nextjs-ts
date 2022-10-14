@@ -1,13 +1,14 @@
-import { NextPageWithLayout } from '@src/models';
+import { NextPageWithLayout } from '@/models';
 import { ReactElement } from 'react';
-import { MainLayout } from '@src/components/layout';
+import { MainLayout } from '@/components/layout';
 import { Box } from '@mui/material';
-import Hero from '@src/components/home/Hero';
+import { RecentPosts, Hero } from '@/components/home';
 
 const Home: NextPageWithLayout = () => {
   return (
     <Box>
       <Hero />
+      <RecentPosts />
     </Box>
   );
 };

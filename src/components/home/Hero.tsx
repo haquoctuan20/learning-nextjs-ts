@@ -1,12 +1,11 @@
-import React from 'react';
 import { Box, Button, Container, Stack, Typography } from '@mui/material';
 import Image from 'next/image';
 
-import imgTemp from '@src/assets/img/image.jpg';
+import imgTemp from '@/assets/img/image.jpg';
 
-const Hero = () => {
+export function Hero() {
   return (
-    <Box component='section' pt={{ xs: 2, md: 8 }}>
+    <Box component='section' mt={{ xs: 2, md: 8 }} mb={5}>
       <Container fixed>
         <Stack
           direction={{ xs: 'column-reverse', md: 'row' }}
@@ -36,6 +35,4 @@ const Hero = () => {
       </Container>
     </Box>
   );
-};
-
-export default Hero;
+}
