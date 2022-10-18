@@ -56,12 +56,12 @@ export const getStaticProps: GetStaticProps<PostContentProps> = async (
 
   const html_unified = await unified()
     .use(remarkToc, { heading: 'Table của nội dung' })
-    .use(rehypeSlug)
     .use(remarkParse)
     .use(remarkRehype)
     .use(rehypeDocument, { title: post.title })
     .use(rehypeFormat)
     .use(rehypeStringify)
+    .use(rehypeSlug)
     .process(post.mdContent || '');
 
   post.htmlContent = String(html_unified);
