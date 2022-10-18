@@ -11,7 +11,9 @@ const postList: Post[] = [
       'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio eligendi ut quisquam aut exercitationem facere libero, optio minus iure quaerat.',
     publishedDate: new Date().getTime().toString(),
     tagList: ['Tag001', 'Tag002', 'Tag003'],
+    slug: '',
   },
+
   {
     id: '2',
     title: 'Lorem ipsum dolor sit.',
@@ -19,6 +21,7 @@ const postList: Post[] = [
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam totam quod quibusdam fuga dolores natus iusto pariatur at numquam nemo.',
     publishedDate: new Date().getTime().toString(),
     tagList: ['Tag002', 'Tag003'],
+    slug: '',
   },
 ];
 
