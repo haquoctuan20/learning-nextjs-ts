@@ -9,7 +9,16 @@ function HeaderDesktop() {
   const router = useRouter();
 
   return (
-    <Box component='header' textAlign='center' display={{ xs: 'none', md: 'block' }} py={2}>
+    <Box
+      component='header'
+      textAlign='center'
+      display={{
+        xs: 'none',
+        md: 'block',
+        boxShadow: `rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px`,
+      }}
+      py={2}
+    >
       <Container>
         <Stack direction='row' justifyContent='flex-end' alignItems='center' spacing={3}>
           {RouteHeader.map((link, index) => (
