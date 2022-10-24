@@ -12,7 +12,7 @@ import { Container, styled } from '@mui/material';
 //   },
 // });
 
-export const ContainerStyled = styled(Container)(({ theme }) => ({
+export const SlugBlogContainerStyled = styled(Container)(({ theme }) => ({
   '& img': {
     borderRadius: '4px',
     maxWidth: '100%',

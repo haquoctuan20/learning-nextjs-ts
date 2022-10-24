@@ -1,7 +1,7 @@
 import { MainLayout } from '@/components/layout';
 import { Post } from '@/models';
+import { SlugBlogContainerStyled } from '@/styled';
 import { getPostList } from '@/utils';
-import { Container } from '@mui/material';
 import { GetStaticPaths, GetStaticProps, GetStaticPropsContext } from 'next';
 import { ReactElement } from 'react';
 import rehypeDocument from 'rehype-document';
@@ -13,17 +13,15 @@ import remarkRehype from 'remark-rehype';
 import remarkToc from 'remark-toc';
 import { unified } from 'unified';
 import reporter from 'vfile-reporter';
-import { ContainerStyled } from './styled';
-
 interface PostContentProps {
   post: Post;
 }
 
 function PostContent({ post }: PostContentProps) {
   return (
-    <ContainerStyled fixed>
+    <SlugBlogContainerStyled fixed>
       <div dangerouslySetInnerHTML={{ __html: post.htmlContent || '' }}></div>
-    </ContainerStyled>
+    </SlugBlogContainerStyled>
   );
 }
 
