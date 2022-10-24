@@ -13,6 +13,7 @@ import remarkRehype from 'remark-rehype';
 import remarkToc from 'remark-toc';
 import { unified } from 'unified';
 import reporter from 'vfile-reporter';
+import { ContainerStyled } from './styled';
 
 interface PostContentProps {
   post: Post;
@@ -20,9 +21,9 @@ interface PostContentProps {
 
 function PostContent({ post }: PostContentProps) {
   return (
-    <Container fixed>
+    <ContainerStyled fixed>
       <div dangerouslySetInnerHTML={{ __html: post.htmlContent || '' }}></div>
-    </Container>
+    </ContainerStyled>
   );
 }
 
